@@ -90,7 +90,7 @@ function openModal(projectModalName){
     var featuresListItem;
 
 
-    // AQC, portfolio, swaap, blogbackend, nodeBE, cgol, nasaSearch, vbDatabase, javabe, ucCustomer, speechRecog, aQuack
+    // AQC, portfolio, swaap, blogbackend, nodeBE, cgol, nasaSearch, vbDatabase, javabe, ucCustomer, speechRecog, aQuack, webappFE
     if(projectModalName == 'AQC'){
 
         h2content.textContent = 'Company App:  Marketing Website';
@@ -184,10 +184,7 @@ function openModal(projectModalName){
         techStackListItem.textContent = 'GitHub Contributions Calendar';
         techStackList.appendChild(techStackListItem);
         
-        
-        
-        
-        
+
         featuresListItem = document.createElement('li');
         featuresListItem.textContent = "Live solo project; works in all Chromium-based browsers";
         featuresList.appendChild(featuresListItem);
@@ -676,6 +673,45 @@ function openModal(projectModalName){
         featuresList.appendChild(featuresListItem);
         featuresListItem = document.createElement('li');
         featuresListItem.textContent = 'repeats user-entered information back to you';
+        featuresList.appendChild(featuresListItem); 
+    }
+    else if(projectModalName == 'webappFE'){
+
+        h2content.textContent = 'Company App:  Front End';
+        h3content.textContent = "Front end for the online port of my company's VB database, used for transcript production and workflow management";
+
+        deployedLink.href = '#';
+        deployed.src = 'https://img.shields.io/badge/NOT%20Deployed-informational?style=flat&logoColor=white&color=7a28cc';
+
+        codeGitHubLink.href = 'https://github.com/evoingram/webapp-frontend';
+        codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+
+        picture.src = 'img/projects/projectpicture-webappFE.png';
+
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'React';
+        techStackList.appendChild(techStackListItem);
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'Redux';
+        techStackList.appendChild(techStackListItem);
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'Styled Components';
+        techStackList.appendChild(techStackListItem);
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'TypeScript';
+        techStackList.appendChild(techStackListItem);
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'Cypress';
+        techStackList.appendChild(techStackListItem);
+        techStackListItem = document.createElement('li');
+        techStackListItem.textContent = 'Axios';
+        techStackList.appendChild(techStackListItem);
+
+        featuresListItem = document.createElement('li');
+        featuresListItem.textContent = "In-progress solo project";
+        featuresList.appendChild(featuresListItem);
+        featuresListItem = document.createElement('li');
+        featuresListItem.textContent = "Front end for the online port of my company's VB database, used for transcript production and workflow management";
         featuresList.appendChild(featuresListItem); 
     }
     pictureTSDiv.appendChild(pictureDiv);

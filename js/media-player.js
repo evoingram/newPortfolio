@@ -223,6 +223,10 @@ function scrub(e) {
     video.currentTime = scrubTime;
 }
 
+function toggleCC(){
+
+}
+
 /*  hook up the event listeners */
 video.addEventListener('click', togglePlayPause);
 video.addEventListener('play', changeButtonType);

@@ -486,8 +486,16 @@ dl dd {
     align-items: center;
 }
 
-.video-section h2 {
-    font-size: 2em;
+@media screen and (max-width: 449px) {
+    .video-section h2 {
+        font-size: 1.5em;
+    }    
+}
+@media screen and (min-width: 450px) {
+    .video-section h2 {
+        font-size: 2em;
+    }
+    
 }
 
 .resume {
@@ -777,6 +785,14 @@ section .icons .resume-icon {
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    body {
+        transform: scale(0.95);
+        transform-origin: 0 0;
+    }
+}
+
 @media screen and (max-width: 736px) {
 
     h1 {
@@ -846,6 +862,18 @@ section .icons .resume-icon {
 
         .thumbnails h3 {
             font-size: 1em;
+        }
+        figure#media-player div#player-controls #media-controls #media-buttons {
+            max-width: 15%;
+        
+        }
+        figure #media-buttons .icon {
+            max-width: 20px !important;
+            max-height: 20px !important;
+        } 
+        figure #media-buttons .icon i,  figure #media-buttons .icon img {
+            max-width: 20px !important;
+            max-height: 20px !important;
         }
 }
 
@@ -936,4 +964,18 @@ body.is-covered #wrapper {
         padding: 2em 0 2em 0;
     }
 
+}
+
+@media screen and (max-width: 599px) {
+		
+	section.menu-section ul.main-section-menu {
+		flex-wrap: wrap;
+    }
+	section.menu-section ul.main-section-menu li {
+        width: 100%;
+    }
+	section.menu-section ul.main-section-menu li h2.style2 {
+        width: 100%;
+        text-align: center;
+    }
 }

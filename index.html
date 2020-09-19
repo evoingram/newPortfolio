@@ -16,6 +16,7 @@
     <script src="js/index.js"></script>
     <script src="js/fontawesome.js"></script>
     <link rel="stylesheet" href="css/media-player.css" />
+    <link rel="stylesheet" href="css/subtitles.css" />
 </head>
 
 <body>
@@ -44,12 +45,13 @@
                 <li><a href="mailto:me@ericaingram.tech" target="_blank" rel="noopener noreferrer" class="icon style2
                             fa-envelope"><span class="label">Email</span></a></li>
             </ul>
+            <div>(425) 610-7447<br />me at ericaingram dot tech</div>
         </header>
 
         <!-- Main -->
         <section id="main">
             <section class="video-section">
-                <h2>NEW Project Walkthrough Video</h2>
+                <h2 id="video-player-title" class="video-player-title">NEW Project Walkthrough</h2>
                 <!-- Video Player & Video -->
                 <p>Check out the custom video player & new video I recently made, where I introduce myself and walk through a few projects I've completed.</p>
                 
@@ -64,6 +66,7 @@
                                 srclang="en" 
                                 default 
                                 onload="displayChapters(this)" />  
+                            <track label="English" kind="subtitles" srclang="en" src="img/video/captions.vtt" default>
                         </video>
                         <div id='media-controls'>
                             <div id="progress-label">Video Progress:</div>
@@ -106,6 +109,10 @@
                                 <div id='share-button' class='icon style2 buttonDiv' 
                                         title='share on social media'>
                                         <img id='share-img' src="img/share/share.png" alt="share on social media" />
+                                </div>	
+                                <div id='cc-button' class='icon style2 buttonDiv' 
+                                        title='closed captioning' onclick='toggleCC()'>
+                                        <img id='cc-img' src="img/video/cc.png" alt="toggle closed captioning" />
                                 </div>		
                             </div>
                         </div>
@@ -519,7 +526,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p>&copy; 2020 Erica Ingram. All rights reserved. </p>
+            <p>&copy; 2020 Erica Ingram. All rights reserved.  <br />(425) 610-7447   |  me at ericaingram dot tech</div>
         </footer>
 
     </div>
@@ -545,4 +552,20 @@ span.onclick = () => {closeModal();}
 
 window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
 window.onclick = (event) => {if (event.target == modal) {closeModal();}}
+
+var subtitleButton = document.getElementById('cc-button');
+var subtitles;
+for (var i = 0; i < video.textTracks.length; i++) {
+    if(video.textTracks[i].kind = 'subtitles'){
+        console.log(video.textTracks[i]);
+        video.textTracks[i].mode = 'hidden';
+        subtitles = video.textTracks[i];
+    }
+}
+subtitleButton.addEventListener('click', (e) => {
+    if (subtitles) {
+        console.log('clicked cc button');
+        subtitles.mode = (subtitles.mode == 'showing' ? 'hidden' : 'showing');
+    }});
+
 </script>

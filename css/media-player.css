@@ -133,20 +133,6 @@ figure#video-track-container {
 	  height: 20px;
   }
   
-  @media screen and (max-width: 500px) {
-	figure#video-track-container video, 
-	figure#video-track-container figcaption { 
-	  display: block; 
-	  width: 100%;
-  }
-	figure#video-track-container video { 
-	  border-bottom: 10px solid #111;
-  }
-  figure#video-track-container figcaption { 
-	position: static; 
-	height: 200px;
-	}
-  }
   input[type=range] {
 	  height: 20px;
 	  -webkit-appearance: none;
@@ -241,7 +227,7 @@ figure #media-controls #media-buttons {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 95%;
+	max-width: 95%;
 	justify-content: space-evenly;
 	padding-top: 3%;
 
@@ -249,15 +235,15 @@ figure #media-controls #media-buttons {
 figure #media-buttons .icon {
 	border: none;
 	cursor: pointer;
-	width: 80px !important;
-	height: 80px !important;
+	max-width: 80px;
+	max-height: 80px;
 	display: flex !important;
 	visibility: visible;
 	z-index: 99999;
 } 
 figure #media-buttons .icon i,  figure #media-buttons .icon img {
-	width: 80px !important;
-	height: 80px !important;
+	max-width: 80px;
+	max-height: 80px;
 	display: flex !important;
 	visibility: visible;
 	background-color: #C094F6;
@@ -341,3 +327,104 @@ figure #media-buttons .icon i,  figure #media-buttons .icon img {
 	from {opacity: 0} 
 	to {opacity: 1}
   }
+  
+@media screen and (max-width: 768px) {
+
+	section.video-section{
+		margin-left: 7%;
+	}
+	figure #media-controls #media-buttons {
+		max-width: 55%;
+		margin-left: 40%;
+	
+	}
+	figure #media-buttons .icon {
+		max-width: 25px !important;
+		max-height: 25px !important;
+	} 
+	figure #media-buttons .icon i,  figure #media-buttons .icon img {
+		max-width: 25px !important;
+		max-height: 25px !important;
+	}
+}
+  
+@media screen and (min-width: 481px) {
+
+	section.video-section{
+		margin-left: 7%;
+	}
+	figure #media-controls #media-buttons {
+		max-width: 55%;
+		margin-left: 20%;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+  figure#video-track-container video, 
+  figure#video-track-container figcaption { 
+	display: block; 
+	width: 100%;
+}
+  figure#video-track-container video { 
+	border-bottom: 10px solid #111;
+}
+figure#video-track-container figcaption { 
+  position: static; 
+  height: 200px;
+  }
+}
+
+
+
+@media screen and (max-width: 361px) {
+	
+
+	figure #media-controls #media-buttons {
+		max-width: 25%;
+	
+	}
+	figure #media-buttons .icon {
+		max-width: 20px !important;
+		max-height: 20px !important;
+	} 
+	figure #media-buttons .icon i,  figure #media-buttons .icon img {
+		max-width: 20px !important;
+		max-height: 20px !important;
+	}
+}
+
+@media screen and (min-width: 599px) {
+		
+	ul.main-section-menu li {
+		flex-wrap: wrap;
+	}
+
+	section.video-section{
+		margin-left: 7%;
+	}
+	figure #media-controls #media-buttons {
+		max-width: 55%;
+		margin-left: 20%;
+	
+	}
+	figure #media-buttons .icon {
+		max-width: 25px !important;
+		max-height: 25px !important;
+	} 
+	figure #media-buttons .icon i,  figure #media-buttons .icon img {
+		max-width: 25px !important;
+		max-height: 25px !important;
+	}
+}
+@media screen and (min-width: 1000px) {
+		
+	figure #media-buttons .icon {
+		max-width: 80px !important;
+		max-height: 80px !important;
+	} 
+	figure #media-buttons .icon i,  figure #media-buttons .icon img {
+		max-width: 80px !important;
+		max-height: 80px !important;
+	}
+}

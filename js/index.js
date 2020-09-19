@@ -42,29 +42,38 @@ function openModal(projectModalName){
     modalBody.appendChild(mbH3content);
 
 
+    var mfH3contentE = document.createElement('div');
+    mfH3contentE.className = 'mfH3content';
+    modalFooter.appendChild(mfH3contentE);
 
     var mfH3contentD = document.createElement('div');
     mfH3contentD.className = 'mfH3content';
     modalFooter.appendChild(mfH3contentD);
-    mfH3contentD.marginLeft = '100px';
-    mfH3contentD.padding = '100px';
 
     var mfH3contentC = document.createElement('div');
     mfH3contentC.className = 'mfH3content';
-    mfH3contentC.marginLeft = '100px';
-    mfH3contentC.padding = '100px';
     modalFooter.appendChild(mfH3contentC);
     
+
     var pictureTSDiv = document.createElement('div');
     pictureTSDiv.classList.add('picture-ts');
     mbH3content.appendChild(pictureTSDiv);
 
     var deployedLink = document.createElement('a');
+    deployedLink.setAttribute("target", "_blank");
+    deployedLink.setAttribute("rel", "noopener noreferrer");
     var deployed = document.createElement('img');
+
     var codeGitHubLink = document.createElement('a');
     codeGitHubLink.setAttribute("target", "_blank");
     codeGitHubLink.setAttribute("rel", "noopener noreferrer");
     var codeGitHub = document.createElement('img');
+
+    var codeClimateLink = document.createElement('a');
+    codeClimateLink.setAttribute("target", "_blank");
+    codeClimateLink.setAttribute("rel", "noopener noreferrer");
+    var codeClimate = document.createElement('img');
+
     var pictureDiv = document.createElement('div');
     pictureDiv.classList.add('main-body');
     pictureDiv.classList.add('picturets-picture');
@@ -101,8 +110,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/newAQCwebsite';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
-        codeGitHub.setAttribute("target", "_blank");
-        codeGitHub.setAttribute("rel", "noopener noreferrer");
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/newAQCWebsite/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/043ebab30e06dbf85ed7/maintainability';
 
         picture.src = 'img/projects/projectpicture-AQC.png';
 
@@ -166,8 +176,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/portfolio';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
-        codeGitHub.setAttribute("target", "_blank");
-        codeGitHub.setAttribute("rel", "noopener noreferrer");
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/portfolio/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/59600252b236458e449a/maintainability';
 
         picture.src = 'img/projects/projectpicture-portfolio.png';
 
@@ -228,6 +239,9 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/conference-contacts-fe';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/conference-contacts-fe/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/68404cfcc6a6827234d1/maintainability';
+
         picture.src = 'img/projects/projectpicture-swaap.png';
 
         techStackListItem = document.createElement('li');
@@ -277,6 +291,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/blogbackend';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/blogbackend/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/1c7b5b2d9c8b7f4dbfa4/maintainability';
 
         picture.src = 'img/projects/projectpicture-blogbackend2.png';
 
@@ -333,6 +350,9 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/webapp-backend';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/webapp-backend/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/c1474fe518ccb398d184/maintainability';
+
         picture.src = 'img/projects/projectpicture-nodeBE2-thumb.png';
 
         techStackListItem = document.createElement('li');
@@ -383,6 +403,9 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/cs-bw';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/cs-bw/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/7f43b7af335091b3e81b/maintainability';
+
         picture.src = 'img/projects/projectpicture-cgol.png';
 
         techStackListItem = document.createElement('li');
@@ -425,6 +448,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/nasaSearch';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/nasaSearch/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/b21fbbb38f5918d60ada/maintainability';
 
         picture.src = 'img/projects/projectpicture-nasaSearch.png';
 
@@ -482,6 +508,9 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/vbDatabase';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/vbDatabase/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/06260d9e8729d5d17f2a/maintainability';
+
         picture.src = 'img/projects/projectpicture-vbDatabase.png';
 
         techStackListItem = document.createElement('li');
@@ -537,6 +566,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/webapp-javabe';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/webapp-javabe/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/c6f9b278e28a7b7d126c/maintainability';
 
         picture.src = 'img/projects/projectpicture-javabe.png';
 
@@ -656,6 +688,9 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/cortanaBot';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/cortanaBot/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/64a21b3917698f04666e/maintainability';
+
         picture.src = 'img/projects/projectpicture-aQuack.png';
 
         techStackListItem = document.createElement('li');
@@ -685,6 +720,9 @@ function openModal(projectModalName){
 
         codeGitHubLink.href = 'https://github.com/evoingram/webapp-frontend';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+
+        codeClimateLink.href = 'https://codeclimate.com/github/evoingram/webapp-frontend/maintainability';
+        codeClimate.src = 'https://api.codeclimate.com/v1/badges/9e220220e7d71d3e13a8/maintainability';
 
         picture.src = 'img/projects/projectpicture-webappFE.png';
 
@@ -730,8 +768,12 @@ function openModal(projectModalName){
 
     mfH3contentD.appendChild(deployedLink);
     deployedLink.appendChild(deployed);
+
     mfH3contentC.appendChild(codeGitHubLink);
     codeGitHubLink.appendChild(codeGitHub);
+
+    mfH3contentE.appendChild(codeClimateLink);
+    codeClimateLink.appendChild(codeClimate);
 
 }
 

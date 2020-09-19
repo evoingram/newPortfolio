@@ -255,7 +255,6 @@ figure #media-buttons .icon {
 	visibility: visible;
 	z-index: 99999;
 } 
-/*--allow-file-access-from-files*/
 figure #media-buttons .icon i,  figure #media-buttons .icon img {
 	width: 80px !important;
 	height: 80px !important;
@@ -263,3 +262,82 @@ figure #media-buttons .icon i,  figure #media-buttons .icon img {
 	visibility: visible;
 	background-color: #C094F6;
 }
+
+.share-modal {
+	display: none; /* Hidden by default */
+	z-index: 99999; /* Sit on top */
+	max-width: 300px; 
+	max-height: 50px;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	-webkit-animation-name: fadeIn; /* Fade in the background */
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s;
+	margin-top: 50%;
+  }
+  
+  .share-modal-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: right;
+	bottom: 0;
+	background-color: #340a67;
+	height: 50px;
+	max-height: 50px;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s
+  }
+  
+  .share-modal-body {
+	  padding: 2px 16px;
+	  display: flex;
+	  width: 100%; 
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: right;
+	}
+  
+	.share-modal-body img {
+		max-height: 50px;
+	  }
+	
+/* The Close Button */
+.share-close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	padding-left: 5%;
+  }
+  
+  .share-close:hover,
+  .share-close:focus {
+	color: #C094F6;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  
+  @-webkit-keyframes slideIn {
+	from {bottom: -300px; opacity: 0} 
+	to {bottom: 0px; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+	from {bottom: -300px; opacity: 0}
+	to {bottom: 0px; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }

@@ -778,7 +778,7 @@ function openModal(projectModalName){
 }
 
 function closeModal(){
-    
+    console.log('closing modal');
     var modal = document.getElementById("myModal");
 
     var modalHeader = document.getElementById("modal-header");

@@ -644,7 +644,7 @@ section .icons .resume-icon {
         .thumbnails > .myBtn > :last-child {
             margin-bottom: 0;
         }
-    /* Modal Header */
+
     .modal-header {
         display: flex;
         flex-direction: column;
@@ -668,14 +668,12 @@ section .icons .resume-icon {
         font-weight: bold;
     }
     
-    /* Modal Body */
     .modal-body {
         padding: 2px 16px;
         background-color:  #340a67;
         border: transparent;
     }
     
-    /* Modal Footer */
     .modal-footer {
         padding: 2px 16px;
         background-color:#c094f6;
@@ -683,7 +681,7 @@ section .icons .resume-icon {
         justify-content: center;
         color: white;
     }
-    /* Modal Content */
+
     .modal-content {
         position: relative;
         background-color: #fefefe;
@@ -737,8 +735,8 @@ section .icons .resume-icon {
         max-width: 984px;
         max-height: 881px;
         margin: 0 auto;
+        z-index: 99999;
     }
-    
     
     /* Add Animation */
     @keyframes animatetop {

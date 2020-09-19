@@ -103,6 +103,10 @@
                                         title='mute' onclick='toggleMute("true");'>
                                         <img id='mute-img' src="img/video/mute.png" alt="mute/unmute" />
                                 </div>		
+                                <div id='share-button' class='icon style2 buttonDiv' 
+                                        title='share on social media'>
+                                        <img id='share-img' src="img/share/share.png" alt="share on social media" />
+                                </div>		
                             </div>
                         </div>
                     </div>
@@ -112,7 +116,40 @@
                             </ol>
                         </figcaption>
                     </div>
+                    <div id="share-modal" class="share-modal">
+                        <div class="share-modal-content">
+                            <div class="share-modal-body">
+                                <div id='facebook' 
+                                     title='Share on Facebook'>
+                                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.ericaingram.com" target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/share/facebook.png" alt="Share on Facebook" />
+                                    </a>
+                                </div>	
+                                <div id='twitter'
+                                        title='Share on Twitter'>
+                                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/share/twitter.png" alt="Share on Twitter" />
+                                    </a>
+                                </div>
+                                <div id='linkedin'
+                                        title='Share on LinkedIn'>
+                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.ericaingram.com&title=Cool%20Project%20Walkthrough%20%26%20Custom%20Video%20Player&summary=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram.&source=" target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/share/linkedin.png" alt="Share on LinkedIn" />
+                                    </a>
+                                </div>
+                                <div id='email'
+                                        title='Share via email' >
+                                        <a href="mailto:?subject=cool%20project%20walkthrough%20%26%20custom%20video&body=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/share/email.png" alt="Share via email" />
+                                    </a>
+                                </div>	
+                                <span class="share-close">&times;</span>
+                            </div>	
+                        </div>
+                    </div>
                 </figure>
+                
+
                 <br />
                 <a href="https://aquoco-my.sharepoint.com/:p:/g/personal/evoingram_aquoco_onmicrosoft_com/EVbkdF0VUc1HoU3a2TcVitQBl3S2BgIgMv-KQXU90JrsoA?e=FlmvOw" target="_blank" rel="noopener noreferrer">Click here to download a copy of the presentation.</a>
             </section>
@@ -320,7 +357,7 @@
                             <!-- Modal content -->
                             <div id="modal-content" class="modal-content">
                                 <div class="modal-header">
-                                    <div class="close">&times;</div>
+                                    <div id="close" class="close" onclick="closeModal();">&times;</div>
                                 </div>
                                 <div id="modal-header" class="modal-header">
                                 </div>
@@ -493,4 +530,19 @@
 </html>
 <script>
     new GitHubCalendar("#calendar", "evoingram", { responsive: true, global_stats: true });
+    
+var shareModal = document.getElementById("share-modal");
+var modal = document.getElementById("modal");
+var shareButton = document.getElementById("share-button");
+var shareSpan = document.getElementsByClassName("share-close")[0];
+var span = document.getElementById("close");
+
+shareButton.onclick = () => {shareModal.style.display = "flex";}
+
+// When the user clicks on <span> (x), close the modal
+shareSpan.onclick = () => {shareModal.style.display = "none";}
+span.onclick = () => {closeModal();}
+
+window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
+window.onclick = (event) => {if (event.target == modal) {closeModal();}}
 </script>

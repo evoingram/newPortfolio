@@ -1,0 +1,8 @@
+[0919/041450.119:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///E:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
+[0919/114015.579:ERROR:cmd_buffer_helper.cc(141)] ContextResult::kFatalFailure: CommandBufferHelper::AllocateRingBuffer() failed
+[0919/114015.589:ERROR:gles2_cmd_decoder.cc(2710)] [GroupMarkerNotSet(crbug.com/242999)!:F8FB8F373F020000]GL ERROR :GL_OUT_OF_MEMORY : ScopedFramebufferBinder::dtor: <- error from previous GL command
+[0919/114015.596:ERROR:gles2_cmd_decoder.cc(2710)] [GroupMarkerNotSet(crbug.com/242999)!:F8FB8F373F020000]GL ERROR :GL_OUT_OF_MEMORY : ScopedFramebufferBinder::dtor: <- error from previous GL command
+[0919/114015.596:ERROR:gles2_cmd_decoder.cc(5641)] GLES2DecoderImpl::ResizeOffscreenFramebuffer failed because offscreen FBO was incomplete.
+[0919/114015.596:ERROR:gles2_cmd_decoder.cc(2710)] [GroupMarkerNotSet(crbug.com/242999)!:F8FB8F373F020000]GL ERROR :GL_OUT_OF_MEMORY : BackFramebuffer::Destroy: <- error from previous GL command
+[0919/114015.596:ERROR:gles2_cmd_decoder.cc(3884)] ContextResult::kFatalFailure: Could not allocate offscreen buffer storage.
+[0919/114017.329:ERROR:validation_errors.cc(76)] Invalid message: VALIDATION_ERROR_UNEXPECTED_NULL_POINTER (null field 1)

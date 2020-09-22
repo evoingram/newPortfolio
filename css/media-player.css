@@ -16,7 +16,7 @@
 figure #player-controls #media-video {
 	border:1px solid #340a67;
 	background:#000;
-	width: 100%;
+	width: 94%;
 	justify-content: left;
 }
 .pause { background-position:-19px 0; }
@@ -42,7 +42,9 @@ figure #player-controls #media-video {
     flex: 0;
     flex-basis: 0%;
   }
-
+  #chapters li:hover {
+	background-color: #C094F6;
+  }
 
   figure {
 	font-size: 0;
@@ -109,16 +111,6 @@ figure#video-track-container {
 	color: #666;
 	text-align: left;
 	line-height: 1.2;
-  }
-  .current {
-	  background: #C094F6;
-	  color: #ffffff;
-  }
-  figure#video-track-container figcaption ol li a:not(.current):hover, 
-  figure#video-track-container figcaption ol li a:not(.current):focus { 
-	background: hsl(45,80%,30%); 
-	color: #000; 
-	cursor: pointer;
   }
   figure#video-track-container figcaption::-webkit-scrollbar {
 	  width: 13px;
@@ -427,4 +419,14 @@ figure#video-track-container figcaption {
 		max-width: 80px !important;
 		max-height: 80px !important;
 	}
+}
+.current {
+	background: #C094F6;
+	color: #340a67;
+}
+figure#video-track-container figcaption ol li a:not(.current):hover, 
+figure#video-track-container figcaption ol li a:not(.current):focus { 
+  background: hsl(45,80%,30%); 
+  color: #000; 
+  cursor: pointer;
 }

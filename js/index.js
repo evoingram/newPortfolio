@@ -1,4 +1,6 @@
 
+
+
 function toggleMainSection(sectionName) {
     var sections = document.getElementsByClassName('submenu');
     for(let x = 0; x < sections.length; x++){
@@ -14,6 +16,7 @@ function toggleMainSection(sectionName) {
 
 function openModal(projectModalName){
     var modal = document.getElementById("myModal");
+    
     modal.style.display = "flex";
 
     var modalContent = document.getElementById("modal-content");
@@ -98,9 +101,13 @@ function openModal(projectModalName){
     var featuresList = document.createElement('ul');
     var featuresListItem;
 
+    // company production software
 
     // AQC, portfolio, swaap, blogbackend, nodeBE, cgol, nasaSearch, vbDatabase, javabe, ucCustomer, speechRecog, aQuack, webappFE
     if(projectModalName == 'AQC'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
 
         h2content.textContent = 'Company App:  Marketing Website';
         h3content.textContent = "My court transcription company's new website using what I've learned at Lambda";
@@ -115,6 +122,8 @@ function openModal(projectModalName){
         codeClimate.src = 'https://api.codeclimate.com/v1/badges/043ebab30e06dbf85ed7/maintainability';
 
         picture.src = 'img/projects/projectpicture-AQC.png';
+        picture.style.transform = 'scale(0.9)';
+        picture.style.marginBottom = '-6%';
 
         techStackListItem = document.createElement('li');
         techStackListItem.textContent = 'HTML';
@@ -165,11 +174,14 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'portfolio'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
 
         h2content.textContent = 'Portfolio';
         h3content.textContent = "Work of art featuring an Olympic National Park theme and lots of pure CSS animation";
 
-        deployedLink.href = 'https://www.aquoco.co/erica-ingram/index.html';
+        deployedLink.href = 'https://www.aquoco.co/erica-ingram/artsy/index.html';
         deployed.src = 'https://img.shields.io/badge/Deployed%20Project-informational?style=flat&logoColor=white&color=7a28cc';
         codeGitHub.setAttribute("target", "_blank");
         codeGitHub.setAttribute("rel", "noopener noreferrer");
@@ -229,6 +241,9 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'swaap'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
 
         h2content.textContent = 'Swaap';
         h3content.textContent = "A contact trading app, a way for people to gather, collect and stay in contact with people that you meet, built remotely with continuous delivery by a seven-member crossfunctional team";
@@ -282,6 +297,10 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'blogbackend'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Blog Back End';
         h3content.textContent = "API for a hypothetical blog contributed to by many authors with extensive query parameters and tagging functionality";
@@ -340,6 +359,10 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'nodeBE'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Node Back End';
         h3content.textContent = "Node back end for the online port of my company's VB database, used for transcript production and workflow management";
@@ -354,6 +377,9 @@ function openModal(projectModalName){
         codeClimate.src = 'https://api.codeclimate.com/v1/badges/c1474fe518ccb398d184/maintainability';
 
         picture.src = 'img/projects/projectpicture-nodeBE2-thumb.png';
+        picture.style.transform = 'scale(0.7)';
+        picture.style.marginTop = '-6%';
+        picture.style.marginBottom = '-6%';
 
         techStackListItem = document.createElement('li');
         techStackListItem.textContent = 'Node.js';
@@ -393,6 +419,9 @@ function openModal(projectModalName){
     }
 
     else if(projectModalName == 'cgol'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
 
         h2content.textContent = "Conway's Game of Life";
         h3content.textContent = "Conway's Game of Life developed for Computer Science, Unit 1 Build Week, capstone project of unit 1";
@@ -439,7 +468,9 @@ function openModal(projectModalName){
     }
 
     else if(projectModalName == 'nasaSearch'){
-
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
         h2content.textContent = 'NASA Images Library Clone';
         h3content.textContent = "A clone of images.NASA.gov, NASA's media library, improved over the original";
 
@@ -453,6 +484,8 @@ function openModal(projectModalName){
         codeClimate.src = 'https://api.codeclimate.com/v1/badges/b21fbbb38f5918d60ada/maintainability';
 
         picture.src = 'img/projects/projectpicture-nasaSearch.png';
+        picture.style.transform = 'scale(0.9)';
+        picture.style.marginBottom = '-6%';
 
         techStackListItem = document.createElement('li');
         techStackListItem.textContent = 'React';
@@ -498,13 +531,13 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'vbDatabase'){
-
+        modalFooter.classList.add('unfit-footer');
         h2content.textContent = 'Company App:  Production Software';
         h3content.textContent = "My court transcription company's VB database, used for transcript production and workflow management";
 
         deployedLink.href = '#';
         deployed.src = 'https://img.shields.io/badge/Deployed%20OFFLINE-informational?style=flat&logoColor=white&color=7a28cc';
-
+        deployed.style.display = 'none';
         codeGitHubLink.href = 'https://github.com/evoingram/vbDatabase';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
@@ -557,6 +590,10 @@ function openModal(projectModalName){
     }
 
     else if(projectModalName == 'javabe'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Java Back End';
         h3content.textContent = "Java back end for the online port of my company's VB database, used for transcript production and workflow management";
@@ -616,6 +653,10 @@ function openModal(projectModalName){
     }
 
     else if(projectModalName == 'ucCustomer'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Use Case Diagrams';
         h3content.textContent = "Customer & manager Use Case Diagrams for my court transcription company's upcoming software";
@@ -638,6 +679,10 @@ function openModal(projectModalName){
     }
 
     else if(projectModalName == 'speechRecog'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Speech Recognition';
         h3content.textContent = "Speech recognition component of my company's VB database";
@@ -648,7 +693,10 @@ function openModal(projectModalName){
         codeGitHubLink.href = 'https://github.com/evoingram/vbDatabase/tree/master/speech';
         codeGitHub.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
 
-        picture.src = 'img/projects/projectpicture-speechrecog-thumb.png';
+        picture.src = 'img/projects/projectpicture-speechRecog.png';
+        picture.style.transform = 'scale(0.7)';
+        picture.style.marginTop = '-6%';
+        picture.style.marginBottom = '-8%';
 
         techStackListItem = document.createElement('li');
         techStackListItem.textContent = 'Visual Basic';
@@ -678,6 +726,10 @@ function openModal(projectModalName){
     }
     
     else if(projectModalName == 'aQuack'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Chat Bot';
         h3content.textContent = "Chat bot for my court transcription company";
@@ -711,6 +763,10 @@ function openModal(projectModalName){
         featuresList.appendChild(featuresListItem); 
     }
     else if(projectModalName == 'webappFE'){
+        if(modalFooter.classList.contains('unfit-footer')){
+            modalFooter.classList.remove('unfit-footer');
+        }
+
 
         h2content.textContent = 'Company App:  Front End';
         h3content.textContent = "Front end for the online port of my company's VB database, used for transcript production and workflow management";
@@ -775,10 +831,12 @@ function openModal(projectModalName){
     mfH3contentE.appendChild(codeClimateLink);
     codeClimateLink.appendChild(codeClimate);
 
+    if(projectModalName == 'speechRecog'){
+
+    }
 }
 
 function closeModal(){
-    console.log('closing modal');
     var modal = document.getElementById("myModal");
 
     var modalHeader = document.getElementById("modal-header");
@@ -794,3 +852,20 @@ function closeModal(){
 }
 
 
+document.addEventListener("click", (event) => { 
+    if(!event) event = window.event;
+    var modal = document.getElementById("myModal");
+    var rect = event.target.getBoundingClientRect();
+    if(window.screen.width <= 850){
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        yPosition = rect.top + scrollTop; 
+        if(modal.style.display !== 'none'){
+            modal.style.position = 'absolute';
+            modal.style.top = yPosition + 'px';
+        }
+    }
+    else{
+        modal.style.position = '';
+        modal.style.top = '0px';
+    }
+}, false);

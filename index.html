@@ -17,6 +17,20 @@
     <script src="js/fontawesome.js"></script>
     <link rel="stylesheet" href="css/media-player.css" />
     <link rel="stylesheet" href="css/subtitles.css" />
+
+    
+        <!-- favicons -->
+    <link rel="icon" href="img/myAvatar.png" sizes="32x32" />
+    <link rel="icon" href="img/myAvatar.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/myAvatar.png" sizes="180x180" />
+
+
+    <meta name="keywords"
+        content="Erica Ingram, software engineer, software developer, developer, full-stack web developer, full-stack software engineer, full-stack software developer, HTML, CSS, Java, JavaScript, LESS, React, Redux, TypeScript, UML, Node.js, Express, Knex, SQL, MySQL, PostgreSQL, Jest, Cypress, GraphQL, Python, Swagger, Maven, JUnit, Agile, Git, Visual Basic" />
+
+    <meta name="description"
+        content="portfolio of Erica Ingram, full-stack web developer from Seattle, Washington.">
+
 </head>
 
 <body>
@@ -28,11 +42,14 @@
         <header id="header">
             <span class="avatar"><img src="img/myAvatar.png" alt="" /></span>
             <h1>Hello, my name's Erica Ingram. Welcome to my new portfolio. I'm
-                a full stack web developer, and I love building apps and
-                solving problems.</h1>
+                a full-stack web developer, working in a JavaScript, Node, and React-based stack, and I love building apps and solving problems.</h1>
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/aquocotrans" target="_blank" rel="noopener noreferrer"
-                        class="icon style2 fa-linkedin"><span class="label">Twitter</span></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aquocotrans" target="_blank" rel="noopener noreferrer"
+                        class="icon style2 fa-linkedin">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
                 <li><a href="https://www.github.com/evoingram" target="_blank" rel="noopener noreferrer"
                         class="icon style2 fa-github"><span class="label">Facebook</span></a></li>
                 <li><a href="http://hackerrank.com/evoingram" target="_blank" rel="noopener noreferrer"
@@ -53,13 +70,12 @@
             <section class="video-section">
                 <h2 id="video-player-title" class="video-player-title">NEW:  Project Walkthrough</h2>
                 <!-- Video Player & Video -->
-                <p>Check out the custom video player & new video I recently made, where I introduce myself and walk through a few projects I've completed.  This custom video player features captions, chapters, volume and playback speed controls, and social media sharing in addition to standard video controls.</p>
+                <p>To learn even more about me and how I work, please check out the below video (32:26).  Because I am a developer more than a filmmaker, I'm of course most excited to show off the custom video player I built, which features captions, chapters, volume and playback speed controls, and social media sharing in addition to standard video controls.  I also transcribed the captions!</p>
                 <br />
                 <figure id='media-player'>
                     <div id="player-controls">
-                        <video id='media-video' controls>
-                            <source src='img/video/parrots.mp4' type='video/mp4'>
-                            <source src='img/video/parrots.webm' type='video/webm'>
+                        <video id='media-video' controls preload="auto">
+                            <source src='img/video/ProjectWalkthrough-FINAL.mp4' type='video/mp4'>
                             <track kind="chapters" 
                                 label="Projects" 
                                 src="img/video/chapters.vtt" 
@@ -111,7 +127,7 @@
                                         <img id='share-img' src="img/share/share.png" alt="share on social media" />
                                 </div>	
                                 <div id='cc-button' class='icon style2 buttonDiv' 
-                                        title='closed captioning' onclick='toggleCC()'>
+                                        title='closed captioning'>
                                         <img id='cc-img' src="img/video/cc.png" alt="toggle closed captioning" />
                                 </div>		
                             </div>
@@ -134,15 +150,15 @@
                                 </div>	
                                 <div id='twitter'
                                         title='Share on Twitter'>
-                                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
+                                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
                                         <img src="img/share/twitter.png" alt="Share on Twitter" />
                                     </a>
                                 </div>
                                 <div id='linkedin'
                                         title='Share on LinkedIn'>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.ericaingram.com&title=Cool%20Project%20Walkthrough%20%26%20Custom%20Video%20Player&summary=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram.&source=" target="_blank"  rel="noopener noreferrer">
-                                        <img src="img/share/linkedin.png" alt="Share on LinkedIn" />
-                                    </a>
+                                            <img src="img/share/linkedin.png" alt="Share on LinkedIn" />
+                                        </a>
                                 </div>
                                 <div id='email'
                                         title='Share via email' >
@@ -158,7 +174,7 @@
                 
 
                 <br />
-                <a href="https://aquoco-my.sharepoint.com/:p:/g/personal/evoingram_aquoco_onmicrosoft_com/EVbkdF0VUc1HoU3a2TcVitQBl3S2BgIgMv-KQXU90JrsoA?e=FlmvOw" target="_blank" rel="noopener noreferrer">Click here to download a copy of the presentation featured in the video.</a>
+                <span class="below-video-container"><a href="https://www.youtube.com/watch?v=W3Ar4sdL-JI#t=0m27s" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-What's%20detasseling%3F-informational?style=flat&logo=Youtube&logoColor=white&color=7a28cc" class="below-vid-links" alt="What's detasseling?"></a><a href="img/video/Presentation.pptx" target="_blank" rel="noopener noreferrer"><img class="below-vid-links" src="https://img.shields.io/badge/%20-Download%20Presentation-informational?style=flat&logo=Microsoft%20PowerPoint&logoColor=white&color=7a28cc" alt="Download the presentation"></a><a href="img/video/ProjectWalkthrough-FINAL.mp4" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-Download%20Video-informational?style=flat&logoColor=white&color=7a28cc" class="below-vid-links" alt="Download Video"></a></span>
             </section>
             <hr />
             <section class="menu-section">
@@ -191,7 +207,7 @@
                         <h2>Experience:</h2>
                         <hr />
                         <h3>Owner/Operator, A Quo Co.</h3>
-                        <h3>May 2009 to present</i></h3>
+                        <h3>May 2009 to present</h3>
                         <ul>
                             <li>Remote work</li>
                             <li>Spent three years developing software to automate workflow with VB & MySQL, integrating with several APIs & programs</li>
@@ -321,13 +337,13 @@
                             </div>
                             <div class="myBtn" onclick="openModal('aQuack')">
                                 <img src="img/projects/projectpicture-aQuack.png" alt="Company App:  Chat Bot" title="Company App:  Chat Bot" />
-                                <h3 id="full01caption">Company App:  Chat Bot</h3>
+                                <h3>Company App:  Chat Bot</h3>
                             </div>
                         </div>
                         <div>
                             <div class="myBtn" onclick="openModal('nodeBE')">
                                 <img src="img/projects/projectpicture-nodeBE2-thumb.png" alt="Company App:  Node Back End" title="Company App:  Node Back End" />
-                                <h3 id="full01caption">Company App:  Node Back End</h3>
+                                <h3>Company App:  Node Back End</h3>
                             </div>
                             <div class="myBtn" onclick="openModal('cgol')">
                                 <img src="img/projects/projectpicture-cgol.png" alt="Conway's Game of Life" title="Conway's Game of Life" />
@@ -339,7 +355,7 @@
                             </div>
                             <div class="myBtn" onclick="openModal('vbDatabase')">
                                 <img src="img/projects/projectpicture-vbDatabase.png" alt="Company App:  Production Software" title="Company App:  Production Software" />
-                                <h3 id="full01caption">Company App:  Production Software</h3>
+                                <h3>Company App:  Production Software</h3>
                             </div>
                         </div>
                         <div>
@@ -352,8 +368,9 @@
                                 <h3>Company App:  Use Case Diagrams</h3>
                             </div>
                             <div class="myBtn" onclick="openModal('speechRecog')">
-                                <img src="img/projects/projectpicture-speechRecog-thumb.png" alt="Company App:  Speech Recognition" title="Company App:  Speech Recognition" />
-                                <h3 id="full01caption">Company App:  Speech Recognition</h3>
+                                <img src="img/projects/projectpicture-speechRecog.png" alt="Company App:  Speech Recognition" title="Company App:  Speech Recognition" 
+                                />
+                                <h3>Company App:  Speech Recognition</h3>
                             </div>
                             <div class="myBtn" onclick="openModal('webappFE')">
                                     <img src="img/projects/projectpicture-webappFE.png" alt="Company App:  Front End" title="Company App:  Front End" />
@@ -502,18 +519,6 @@
                             <p>During Lambda, I:</p>
                             <ul>
                                 <li>had over 1,200 hours of hands-on development/coding time.</li>
-                                <li>overhauled my company's website, which now scores 90 in performance and 100 in
-                                    accessibility, SEO, and best practices in Lighthouse reports. </li>
-                                <li>ported my VB-MySQL database to an online version, and you can check out the Node.js
-                                    and PostgreSQL back end I've done as well as the code from the original VB/MySQL
-                                    database in the projects section. It has full and complete documentation and testing
-                                    via Postman, schema, product vision document for the overall software, etc.</li>
-                                <li>made a pretty cool piece of art which started out as my portfolio, themed around
-                                    Olympic National Park, a place close to where I live. It's heavy on CSS animation.
-                                    Try clicking on the sun to see the moon and stars!</li>
-                                <li>built a React/Redux clone of the NASA images library, which is not in React/Redux.
-                                </li>
-                                <li>built a Cortana bot.</li>
                                 <li>presented product vision and release canvasses for approval to the product owner.
                                 </li>
                                 <li>gave presentations on supplemental content to teach students how to build certain
@@ -521,9 +526,9 @@
                                 <li>on the side learned Java, TypeScript, Docker, UML, advanced Postman, advanced Agile
                                     methodology, PowerShell, advanced VB, system design, scalability, and
                                     object-oriented design patterns.</li>
-                                <li>received 14 references/recommendations while at school, seven on LinkedIn and seven
-                                    more via Searchlight, a third-party service which hides nearly all the recommender's
-                                    content from the recommendee to promote candor.</li>
+                                <li>received 14 references/recommendations while at school, seven on <a href="https://www.linkedin.com/in/aquocotrans/">LinkedIn</a> and seven
+                                    more via <a href="https://github.com/evoingram/evoingram/blob/master/Reference%20Report%20for%20Erica%20Ingram.pdf">Searchlight</a>, a third-party service which hides nearly all the recommender's
+                                    content from the recommendee to promote candor, which can be sent on request via e-mail.</li>
                                 <li>had over 5,900 GitHub contributions over the last year.</li>
                                 <li>studied data structures and algorithms, CTCI, and Leetcode on the side for many,
                                     many hours.</li>
@@ -545,46 +550,30 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p>&copy; 2020 Erica Ingram. All rights reserved.  <br />(425) 610-7447   |  me at ericaingram dot tech</div>
+            <p>&copy; 2020 Erica Ingram. All rights reserved.  <br />(425) 610-7447   |  me at ericaingram dot tech</p>
         </footer>
 
     </div>
 
-    <script src="js/media-player.js"></script>
+    <script src="js/media-player.js" ></script>
 </body>
 
 </html>
 <script>
+    var yPosition;
     new GitHubCalendar("#calendar", "evoingram", { responsive: true, global_stats: true });
+    var shareModal = document.getElementById("share-modal");
+    var modal = document.getElementById("modal");
+    var shareButton = document.getElementById("share-button");
+    var shareSpan = document.getElementsByClassName("share-close")[0];
+    var span = document.getElementById("close");
+    var yPosition;
     
-var shareModal = document.getElementById("share-modal");
-var modal = document.getElementById("modal");
-var shareButton = document.getElementById("share-button");
-var shareSpan = document.getElementsByClassName("share-close")[0];
-var span = document.getElementById("close");
-
-shareButton.onclick = () => {shareModal.style.display = "flex";}
-
-// When the user clicks on <span> (x), close the modal
-shareSpan.onclick = () => {shareModal.style.display = "none";}
-span.onclick = () => {closeModal();}
-
-window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
-window.onclick = (event) => {if (event.target == modal) {closeModal();}}
-
-var subtitleButton = document.getElementById('cc-button');
-var subtitles;
-for (var i = 0; i < video.textTracks.length; i++) {
-    if(video.textTracks[i].kind = 'subtitles'){
-        console.log(video.textTracks[i]);
-        video.textTracks[i].mode = 'hidden';
-        subtitles = video.textTracks[i];
-    }
-}
-subtitleButton.addEventListener('click', (e) => {
-    if (subtitles) {
-        console.log('clicked cc button');
-        subtitles.mode = (subtitles.mode == 'showing' ? 'hidden' : 'showing');
-    }});
-
+    shareButton.onclick = () => {shareModal.style.display = "flex";}
+    shareSpan.onclick = () => {shareModal.style.display = "none";}
+    span.onclick = () => {closeModal();}
+    
+    window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
+    window.onclick = (event) => {if (event.target == modal) {closeModal();}}
+    
 </script>

@@ -1,5 +1,4 @@
 
-var yPosition;
 
 
 function toggleMainSection(sectionName) {
@@ -854,6 +853,7 @@ function closeModal(){
 
 
 document.addEventListener("click", (event) => { 
+    if(!event) event = window.event;
     var modal = document.getElementById("myModal");
     var rect = event.target.getBoundingClientRect();
     if(window.screen.width <= 850){
@@ -867,6 +867,5 @@ document.addEventListener("click", (event) => {
     else{
         modal.style.position = '';
         modal.style.top = '0px';
-
     }
 }, false);

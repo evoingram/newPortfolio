@@ -560,6 +560,7 @@
 
 </html>
 <script>
+    var yPosition;
     new GitHubCalendar("#calendar", "evoingram", { responsive: true, global_stats: true });
     var shareModal = document.getElementById("share-modal");
     var modal = document.getElementById("modal");
@@ -567,10 +568,12 @@
     var shareSpan = document.getElementsByClassName("share-close")[0];
     var span = document.getElementById("close");
     var yPosition;
+    
     shareButton.onclick = () => {shareModal.style.display = "flex";}
     shareSpan.onclick = () => {shareModal.style.display = "none";}
     span.onclick = () => {closeModal();}
     
     window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
     window.onclick = (event) => {if (event.target == modal) {closeModal();}}
+    
 </script>

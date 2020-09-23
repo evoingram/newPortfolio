@@ -43,7 +43,8 @@ figure #player-controls #media-video {
     flex-basis: 0%;
   }
   #chapters li:hover {
-	background-color: #C094F6;
+	background-color: #c6426e;
+	color:#340a67;
   }
 
   figure {

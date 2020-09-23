@@ -184,7 +184,8 @@ subtitleButton.addEventListener('click', (e) => {
                             document.getElementById('media-video').currentTime = chaptersListItems[x].id;
                             chaptersListItems[x].style.textShadow = "-1px 1px 0 #340a67, 1px 1px 0 #340a67, 1px -1px 0 #340a67; -1px -1px 0 #340a67";
                         }, false);
-    
+                        chaptersListItems[x].style.fontFamily = 'Cascadia';
+                        chaptersListItems[x].style.padding = '4%';
                     }
                 }
             textTrack.addEventListener("cuechange",

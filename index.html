@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js"></script>
     <script src="js/fontawesome.js"></script>
     <link rel="stylesheet" href="css/media-player.css" />
     <link rel="stylesheet" href="css/subtitles.css" />
@@ -98,35 +97,35 @@
                                 step="0.1" 
                                 value="1">
                             <div id="media-buttons">
-                                <div id='replay-button' class='replay icon style2 fa-7x fa-redo buttonDiv' 
-                                        title='replay' onclick='replayMedia();'>
+                                <div id='replay-button' class='replay icon style2' 
+                                        title='replay'>
                                         <img src="img/video/replay.png" alt="replay" />
                                 </div>	
-                                <div id='play-pause-button' class='play icon style2 fa-7x fa-play-circle' 
-                                        title='play' onclick='togglePlayPause();'>
+                                <div id='play-pause-button' class='play icon style2' 
+                                        title='play'>
                                         <img id='play-img' src="img/video/play.png" alt="play/pause" />
                                 </div>
-                                <div id='stop-button' class='stop buttonDiv icon style2 fa-7x fa-stop-circle' 
-                                        title='stop' onclick='stopPlayer();'>
+                                <div id='stop-button' class='stop icon style2' 
+                                        title='stop'>
                                         <img src="img/video/stop.png" alt="stop" />
                                 </div>
-                                <div id='volume-inc-button' class='volume-plus icon style2 fa-7x fa-volume-up buttonDiv' 
-                                        title='increase volume' onclick='changeVolume("+");'>
+                                <div id='volume-inc-button' class='volume-plus icon style2' 
+                                        title='increase volume'>
                                         <img src="img/video/plus.png" alt="volume up" />
                                 </div>	
-                                <div id='volume-dec-button' class='volume-minus icon style2 fa-7x fa-volume-down buttonDiv' 
-                                        title='decrease volume' onclick='changeVolume("-");'>
+                                <div id='volume-dec-button' class='volume-minus icon style2' 
+                                        title='decrease volume'>
                                         <img src="img/video/minus.png" alt="volume down" />
                                 </div>	
-                                <div id='mute-button' class='mute icon style2 fa-7x fa-volume-mute buttonDiv' 
-                                        title='mute' onclick='toggleMute("true");'>
+                                <div id='mute-button' class='mute icon style2' 
+                                        title='mute'>
                                         <img id='mute-img' src="img/video/mute.png" alt="mute/unmute" />
                                 </div>		
-                                <div id='share-button' class='icon style2 buttonDiv' 
+                                <div id='share-button' class='icon style2' 
                                         title='share on social media'>
                                         <img id='share-img' src="img/share/share.png" alt="share on social media" />
                                 </div>	
-                                <div id='cc-button' class='icon style2 buttonDiv' 
+                                <div id='cc-button' class='icon style2' 
                                         title='closed captioning'>
                                         <img id='cc-img' src="img/video/cc.png" alt="toggle closed captioning" />
                                 </div>		
@@ -381,11 +380,11 @@
                     <section class="modals">
                         
                         
-                        <div id="myModal" class="modal">
+                        <div id="project-modal" class="modal">
                             <!-- Modal content -->
                             <div id="modal-content" class="modal-content">
                                 <div class="modal-header">
-                                    <div id="close" class="close" onclick="closeModal();">&times;</div>
+                                    <div id="close" class="close">&times;</div>
                                 </div>
                                 <div id="modal-header" class="modal-header">
                                 </div>
@@ -556,24 +555,7 @@
     </div>
 
     <script src="js/media-player.js" ></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
-<script>
-    var yPosition;
-    new GitHubCalendar("#calendar", "evoingram", { responsive: true, global_stats: true });
-    var shareModal = document.getElementById("share-modal");
-    var modal = document.getElementById("modal");
-    var shareButton = document.getElementById("share-button");
-    var shareSpan = document.getElementsByClassName("share-close")[0];
-    var span = document.getElementById("close");
-    var yPosition;
-    
-    shareButton.onclick = () => {shareModal.style.display = "flex";}
-    shareSpan.onclick = () => {shareModal.style.display = "none";}
-    span.onclick = () => {closeModal();}
-    
-    window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}
-    window.onclick = (event) => {if (event.target == modal) {closeModal();}}
-    
-</script>

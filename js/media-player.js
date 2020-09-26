@@ -198,7 +198,6 @@ displayChapters = (trackElement) => {
 setCurrentChapterStyle = (currentChapter) =>{
     document.getElementById('media-video').currentTime = currentChapter.id;
     currentChapter.style.textShadow = "-1px 1px 0 #340a67, 1px 1px 0 #340a67, 1px -1px 0 #340a67; -1px -1px 0 #340a67";
-
 }
 
 setCurrentChapter = () => {
@@ -210,7 +209,7 @@ setCurrentChapter = () => {
             chapter.classList.add("current");
             chaptersList.style.top = "-"+chapter.parentNode.offsetTop+"px";
         }
-}
+    }
 }
 
 scrub = (event) => {video.currentTime = ((event.offsetX / progress.offsetWidth) * video.duration)};

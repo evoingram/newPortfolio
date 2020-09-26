@@ -20,7 +20,7 @@ const progressBar = player.querySelector('.progress__filled');
 const ranges = player.querySelectorAll('.player__slider');
 
 let mousedown = false;
-let videoTracks = video.textTracks;
+var videoTracks = [].slice.call(video.textTracks);
 
 initializeMediaPlayer = () => {
     mediaPlayer = document.getElementById('media-video');
@@ -62,12 +62,12 @@ initializeMediaPlayer = () => {
 
     window.onkeyup = (event) => {if(event.keyCode == 32){togglePlayPause()}}
 
-    for (let i = 0; i < videoTracks.length; i++) {
-        if(videoTracks[i].kind = 'subtitles'){
-            subtitles = videoTracks[i];
+    videoTracks.forEach(videoTrack =>{
+        if(videoTrack.kind === 'subtitles'){
+            subtitles = videoTrack;
             subtitles.mode = 'hidden';
-        }
-    }
+        }}
+    );
 }
 
 setSubtitlesMode = () => {
@@ -120,7 +120,6 @@ replayMedia = () => {
         changeButtonType(playPauseBtn, 'play');
     }
 }
-
 
 changeButtonType = (btn, value) => {
     if(btn && value){

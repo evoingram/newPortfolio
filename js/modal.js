@@ -47,7 +47,7 @@ openModal = (projectModalName) => {
         repoName = 'newAQCWebsite';
         ccID = '043ebab30e06dbf85ed7';
 
-        pictureSRC = 'AQC.png';
+        pictureSRC = 'AQC.webp';
         techStackArray = ['HTML', 'CSS', 'JavaScript', 'LESS', 'PHP'];
         featuresArray = ["Live solo project ranking 90th percentile in Google PageSpeed Insights & first-page results for 'seattle transcription' in Google", 'Ranks 100 for accessibility, best practices, & SEO, 90 in performance in Lighthouse', "Fourth iteration, utilizing what I've learned at Lambda", 'Animation', 'Mixins', 'Image carousel', 'Pure CSS gradients', 'Inside out underline to nav link hover', 'FAQ with expandable questions', 'Desktop, tablet, & mobile versions'];
 
@@ -62,7 +62,7 @@ openModal = (projectModalName) => {
         repoName = 'portfolio';
         ccID = '59600252b236458e449a';
 
-        pictureSRC = 'portfolio.png';
+        pictureSRC = 'portfolio.webp';
         techStackArray = ['HTML', 'CSS', 'JavaScript', 'GitHub Contributions Calendar'];
         featuresArray = ['Live solo project; works in all Chromium-based browsers', 'Olympic National Park theme', 'Pure heavy CSS animation scene (salmon, water, crab) w/ hand-drawn animals', 'Click the sun to toggle twinkling stars at night', 'Clouds in desktop version show park trivia', 'Each project on projects page has a hover overlay', 'Three pop-ups/modals originated from a sign on the beach', 'Inside out underline animation', 'GitHub contribution calendar', 'Desktop & mobile versions'];        
 
@@ -77,7 +77,7 @@ openModal = (projectModalName) => {
         repoName = 'conference-contacts-fe';
         ccID = '68404cfcc6a6827234d1';
 
-        pictureSRC = 'swaap.png';
+        pictureSRC = 'swaap.webp';
         techStackArray = ['React', 'Auth0', 'Reach Router', 'Apollo', 'Tailwind CSS'];
         featuresArray = ['Live team project', 'Give users ability to connect with each other through the app', 'Get and store contacts in a fast and simple way', 'Ability to message contacts', 'Find out where you met contacts', 'Desktop & mobile versions'];
         
@@ -92,7 +92,7 @@ openModal = (projectModalName) => {
         repoName = 'blogbackend';
         ccID = '1c7b5b2d9c8b7f4dbfa4';
 
-        pictureSRC = 'blogbackend2.png';
+        pictureSRC = 'blogbackend2.webp';
         techStackArray = ['Node.js', 'Express', 'Knex', 'bcrypt', 'Postman', 'PostgreSQL'];
         featuresArray = ['Live solo project', 'RESTful API with auth services for blog back end', '37 endpoints', 'Extensive query parameters', 'Top 100 most liked & read posts', 'Post tagging functionality', 'Cache functionality'];
 
@@ -107,7 +107,7 @@ openModal = (projectModalName) => {
         repoName = 'webapp-backend';
         ccID = 'c1474fe518ccb398d184';
 
-        pictureSRC = 'nodeBE2-thumb.png';
+        pictureSRC = 'nodeBE2-thumb.webp';
         techStackArray = ['Node.js', 'Express', 'Knex', 'bcrypt', 'Postman', 'PostgreSQL'];
         featuresArray = ['Live solo project', 'RESTful API with auth services for transcript production system', '126 endpoints', 'CourtListener, Xero, PayPal, Wunderlist, & Office API support', 'Tested and documented via Postman'];
         
@@ -122,7 +122,7 @@ openModal = (projectModalName) => {
         repoName = 'cs-bw';
         ccID = '7f43b7af335091b3e81b';
 
-        pictureSRC = 'cgol.png';
+        pictureSRC = 'cgol.webp';
         techStackArray = ['React', 'Node-Canvas', 'Styled Components'];
         featuresArray = ['Colors: #2958AA (blue), #4E8A63 (green), #642B73 (purple), #C6426E (pink)', "Follows Conway's rules", "Article about Conway's Game of Life", 'Four-day-long blog post detailing tasks completed each day.', 'Ability to select random, user-created, or preset patterns', 'Ability to choose speed & grid size'];
 
@@ -137,7 +137,7 @@ openModal = (projectModalName) => {
         repoName = 'nasaSearch';
         ccID = 'b21fbbb38f5918d60ada';
 
-        pictureSRC = 'nasaSearch.png';
+        pictureSRC = 'nasaSearch.webp';
         techStackArray = ['React', 'Redux', 'Styled Components', 'Video React', 'Cypress', 'Axios'];
         featuresArray = ["Search NASA's media library by media type", 'View 100 most popular or most recently uploaded media files', 'Filter search results by media type & year taken', 'List and thumbnail views of search results', 'File-specific info on single-file details page such as file size, format, captions file name, links to different sizes of media file, NASA ID, center, date created, link to center website, description', 'Share single media file on social media', 'See readme for comparison of original to clone'];
         
@@ -153,7 +153,7 @@ openModal = (projectModalName) => {
         repoName = 'vbDatabase';
         ccID = '06260d9e8729d5d17f2a';
 
-        pictureSRC = 'img/projects/projectpicture-vbDatabase.png';
+        pictureSRC = 'img/projects/projectpicture-vbDatabase.webp';
         techStackArray = ['Visual Basic', 'MySQL', 'MS Access'];
         featuresArray = ['Integrates GTD principles into workflow', 'Generates & formats 25 to 30 different documents automatically via MS Office',"Manages schedule and production workflow", 'Auto-imports electronic communication', 'Automatically hyperlinks authority within transcripts via CourtListener API', 'Manipulates PDFs to auto-generate bookmarks and create different transcript versions', 'Tracks communication and document history of each transcript order', 'Manages and plays audio and reporter notes', 'Integrated with Office, Acrobat, and WinSCP libraries and several APIs such as CourtListener, PayPal, OneNote, and others', 'Speech recognition integrated via batch files & PocketSphinx'];
     }
@@ -167,7 +167,7 @@ openModal = (projectModalName) => {
         repoName = 'webapp-javabe';
         ccID = 'c6f9b278e28a7b7d126c';
 
-        pictureSRC = 'javabe.png';
+        pictureSRC = 'javabe.webp';
         techStackArray = ['Java & Java Spring', 'SQL & PostgreSQL', 'JUnit', 'SLF4J', 'OAuth2', 'Swagger', 'Maven'];
         featuresArray = ['Live in-progress solo project', 'RESTful API with auth services for transcript production system', '138 endpoints (400+ when complete)', 'CourtListener, Xero, PayPal, Wunderlist, & Office API support', 'Tested via Postman & JUnit', 'Documented via Postman & Swagger'];
 
@@ -182,7 +182,7 @@ openModal = (projectModalName) => {
         repoName = 'ucCustomer';
         ccID = '#';
 
-        pictureSRC = 'ucCustomer.jpg';
+        pictureSRC = 'ucCustomer.webp';
         techStackArray = ['Object Oriented Analysis & Design'];
         featuresArray = ['Customer & Manager Use Case Diagrams for Transcript Production Software'];
 
@@ -197,7 +197,7 @@ openModal = (projectModalName) => {
         repoName = 'vbDatabase';
         ccID = '06260d9e8729d5d17f2a';
 
-        pictureSRC = 'speechRecog.png';
+        pictureSRC = 'speechRecog.webp';
         techStackArray = ['Audacity', 'Visual Basic', 'Batch Files', 'PocketSphinx'];
         featuresArray = ['Records & formats audio for training engine', 'Automatically formats & reads transcripts for training engine', 'Teaches itself from provided audio', 'Listens to & transcribes audio', 'Outputs transcript'];
 
@@ -212,7 +212,7 @@ openModal = (projectModalName) => {
         repoName = 'cortanaBot';
         ccID = '64a21b3917698f04666e';
 
-        pictureSRC = 'aQuack.png';
+        pictureSRC = 'aQuack.webp';
         techStackArray = ['Node', 'Yo', 'BotBuilder'];
         featuresArray = ['Live solo project', 'Repeats user-entered information back to you'];
 
@@ -226,7 +226,7 @@ openModal = (projectModalName) => {
         repoName = 'webapp-frontend';
         ccID = '9e220220e7d71d3e13a8';
 
-        pictureSRC = 'webappFE.png';
+        pictureSRC = 'webappFE.webp';
         techStackArray = ['React', 'Redux', 'Styled Components', 'TypeScript', 'Cypress', 'Axios'];
         featuresArray = ['In-progress solo project', "Front end for the online port of my company's VB database, used for transcript production and workflow management"];
 
@@ -271,7 +271,7 @@ appendModalBodyElements = (pictureNameExtension, techStackArray, featuresArray) 
     else if(pictureNameExtension.includes('nodeBE')){
         transformPicture(picture, 'scale(0.7)', '-6%', '-6%');
     }
-    else if(pictureNameExtension.includes('AQC.png')){
+    else if(pictureNameExtension.includes('AQC.webp')){
         transformPicture(picture, 'scale(0.9)', '-6%', '');
     }
 

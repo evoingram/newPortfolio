@@ -10,6 +10,7 @@
         url('../fonts/CascadiaCode.woff2') format('woff2'),
         url('../fonts/CascadiaCode.ttf') format('truetype')
     ;
+    font-display: fallback;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
     src: local('Barlow'), local('Barlow'),
         url('../fonts/Barlow.ttf') format('truetype'),
     ;
+    font-display: fallback;
 }
 
 @font-face {
@@ -30,6 +32,7 @@
     src: local('SourceSansPro'), local('SourceSansPro'),
         url('../fonts/SourceSansPro.ttf') format('truetype')
     ;
+    font-display: fallback;
 }
 
 

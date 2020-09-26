@@ -71,6 +71,7 @@ figure figcaption ol li {
 	padding: .7rem 1rem;
 	border-bottom: 1px dashed #ffffff;
 	transition: .3s;
+	color: #9b9999;
 }
 figure#video-track-container { 
 	font-size: 0; 

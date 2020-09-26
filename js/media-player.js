@@ -185,25 +185,32 @@ displayChapters = (trackElement) => {
 
                 // loop through li items and add click event listener
                 for (let x = 0; x < chaptersListItems.length; x++){
-                    addEventListener(chaptersListItems[x], 'click', () => {                    
-                        document.getElementById('media-video').currentTime = chaptersListItems[x].id;
-                        chaptersListItems[x].style.textShadow = "-1px 1px 0 #340a67, 1px 1px 0 #340a67, 1px -1px 0 #340a67; -1px -1px 0 #340a67";
-                    });
+                    addEventListener(chaptersListItems[x], 'click', () => {setCurrentChapterStyle(chaptersListItems[x])});
                     chaptersListItems[x].style.fontFamily = 'Cascadia';
                     chaptersListItems[x].style.padding = '4%';
                 }
             }
-            addEventListener(textTrack, 'cuechange', () => {
-                var currentChapter = textTrack.activeCues[0].startTime;
-                if (chapter = document.getElementById(currentChapter)) {
-                    var videoChapters = [].slice.call(document.querySelectorAll("#chapters li"));
-                    videoChapters.forEach(videoChapter => {videoChapter.classList.remove("current");});
-                    chapter.classList.add("current");
-                    chaptersList.style.top = "-"+chapter.parentNode.offsetTop+"px";
-                }
-            });
+            addEventListener(textTrack, 'cuechange', setCurrentChapter);
         }
     }
+}
+
+setCurrentChapterStyle = (currentChapter) =>{
+    document.getElementById('media-video').currentTime = currentChapter.id;
+    currentChapter.style.textShadow = "-1px 1px 0 #340a67, 1px 1px 0 #340a67, 1px -1px 0 #340a67; -1px -1px 0 #340a67";
+
+}
+
+setCurrentChapter = () => {
+    if(!mediaPlayer.ended) {
+        var currentChapter = textTrack.activeCues[0].startTime;
+        if (chapter = document.getElementById(currentChapter)) {
+            var videoChapters = [].slice.call(document.querySelectorAll("#chapters li"));
+            videoChapters.forEach(videoChapter => {videoChapter.classList.remove("current");});
+            chapter.classList.add("current");
+            chaptersList.style.top = "-"+chapter.parentNode.offsetTop+"px";
+        }
+}
 }
 
 scrub = (event) => {video.currentTime = ((event.offsetX / progress.offsetWidth) * video.duration)};

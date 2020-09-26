@@ -187,6 +187,7 @@ displayChapters = (trackElement) => {
                     addEventListener(chaptersListItems[x], 'click', () => {setCurrentChapterStyle(chaptersListItems[x])});
                     chaptersListItems[x].style.fontFamily = 'Cascadia';
                     chaptersListItems[x].style.padding = '4%';
+                    chaptersListItems[x].style.color = '#9b9999';
                 }
             }
             addEventListener(textTrack, 'cuechange', setCurrentChapter);

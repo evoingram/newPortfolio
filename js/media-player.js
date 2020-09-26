@@ -113,6 +113,12 @@ toggleMute = () => {
 replayMedia = () => {
     resetPlayer();
     mediaPlayer.play();
+    if (mediaPlayer.paused || mediaPlayer.ended) {
+        changeButtonType(playPauseBtn, 'pause');
+    }
+    else {
+        changeButtonType(playPauseBtn, 'play');
+    }
 }
 
 

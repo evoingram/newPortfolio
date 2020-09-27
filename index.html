@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/media-player.css" />
     <link rel="stylesheet" href="css/subtitles.css" />
     <link rel=preload as="font" href="fonts/CascadiaCode.woff2" type="font/woff2" crossorigin>
-    <link rel=preload as="style" href="css/font-awesome.min.css">
+    <link rel=preload as="style" href="css/font-awesome.min.css" crossorigin>
     <link rel=preload as="font" href="fonts/Barlow.ttf" type="font/ttf" crossorigin>
     <link rel=preload as="font" href="fonts/SourceSansPro.ttf" type="font/ttf" crossorigin>
 
@@ -31,6 +31,15 @@
 
     <meta name="description"
         content="portfolio of Erica Ingram, full-stack web developer from Seattle, Washington.">
+
+    <meta http-equiv="Content-Security-Policy" 
+    content="
+    default-src 'self' https://*.bloggify.net https://bloggify.net; 
+    font-src 'self' https://*.fontawesome.com https://fontawesome.com;
+    script-src 'unsafe-inline' 'self' https://unpkg.com;
+    style-src 'unsafe-inline' 'self' fontawesome.com *.fontawesome.com *.unpkg.com unpkg.com *.githubusercontent.com githubusercontent.com;
+    img-src 'self' https://*.githubassets.com https://*.githubusercontent.com https://*.shields.io https://shields.io https://githubusercontent.com; 
+    media-src 'self';">
 
 </head>
 

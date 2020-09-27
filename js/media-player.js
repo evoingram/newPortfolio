@@ -10,6 +10,7 @@ const replayBtn = document.getElementById('replay-button');
 const volumeUpBtn = document.getElementById('volume-inc-button');
 const volumeDownBtn = document.getElementById('volume-dec-button');
 const subtitleButton = document.getElementById('cc-button');
+const chaptersTrack = document.getElementById('chapters-track');
 
 const player = document.querySelector('#media-player');
 const video = player.querySelector('#media-video');
@@ -58,6 +59,8 @@ initializeMediaPlayer = () => {
     addEventListener(progress, 'mouseup', () => mousedown = false);
     addEventListener(progress, 'change', handleProgress);
 
+    chaptersTrack.onload = () => displayChapters(chaptersTrack);
+    
     addEventListener(subtitleButton, 'click', setSubtitlesMode);
 
     window.onkeyup = (event) => {if(event.keyCode == 32){togglePlayPause()}}

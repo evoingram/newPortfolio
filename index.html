@@ -12,14 +12,12 @@
     </script>
     <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
-    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
     <noscript><link rel="stylesheet" href="css/font-awesome.min.css"></noscript>
     <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/index.css"></noscript>
-    <link rel="preload" href="css/media-player.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/media-player.css"></noscript>
-    <link rel="preload" href="css/subtitles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/subtitles.css"></noscript>
+    <link rel="stylesheet" href="css/media-player.css" />
+    <link rel="stylesheet" href="css/subtitles.css" />
     <link rel=preload as="font" href="fonts/CascadiaCode.woff2" type="font/woff2" crossorigin>
     <link rel=preload as="font" href="fonts/Barlow.ttf" type="font/ttf" crossorigin>
     <link rel=preload as="font" href="fonts/SourceSansPro.ttf" type="font/ttf" crossorigin>
@@ -81,12 +79,13 @@
                     <div id="player-controls">
                         <video id='media-video' controls preload="auto">
                             <source src='img/video/ProjectWalkthrough-FINAL.mp4' type='video/mp4'>
-                            <track kind="chapters" 
+                            <track id="chapters-track"
+                                kind="chapters" 
                                 label="Projects" 
                                 src="img/video/chapters.vtt" 
                                 srclang="en" 
                                 default 
-                                onload="displayChapters(this)" />  
+                                />  
                             <track label="English" kind="subtitles" srclang="en" src="img/video/captions.vtt" default>
                         </video>
                         <div id='media-controls'>

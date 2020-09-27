@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/fontawesome.js"></script>
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
+    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+    <noscript><link rel="stylesheet" href="css/font-awesome.min.css"></noscript>
+    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/index.css"></noscript>
     <link rel="stylesheet" href="css/media-player.css" />
     <link rel="stylesheet" href="css/subtitles.css" />
     <link rel=preload as="font" href="fonts/CascadiaCode.woff2" type="font/woff2" crossorigin>
-    <link rel=preload as="style" href="css/font-awesome.min.css" crossorigin>
     <link rel=preload as="font" href="fonts/Barlow.ttf" type="font/ttf" crossorigin>
     <link rel=preload as="font" href="fonts/SourceSansPro.ttf" type="font/ttf" crossorigin>
 
@@ -31,15 +33,6 @@
 
     <meta name="description"
         content="portfolio of Erica Ingram, full-stack web developer from Seattle, Washington.">
-
-    <meta http-equiv="Content-Security-Policy" 
-    content="
-    default-src 'self' https://*.bloggify.net https://bloggify.net; 
-    font-src 'self' https://*.fontawesome.com https://fontawesome.com;
-    script-src 'unsafe-inline' 'self' https://unpkg.com;
-    style-src 'unsafe-inline' 'self' fontawesome.com *.fontawesome.com *.unpkg.com unpkg.com *.githubusercontent.com githubusercontent.com;
-    img-src 'self' https://*.githubassets.com https://*.githubusercontent.com https://*.shields.io https://shields.io https://githubusercontent.com; 
-    media-src 'self';">
 
 </head>
 
@@ -86,12 +79,13 @@
                     <div id="player-controls">
                         <video id='media-video' controls preload="auto">
                             <source src='img/video/ProjectWalkthrough-FINAL.mp4' type='video/mp4'>
-                            <track kind="chapters" 
+                            <track id="chapters-track"
+                                kind="chapters" 
                                 label="Projects" 
                                 src="img/video/chapters.vtt" 
                                 srclang="en" 
                                 default 
-                                onload="displayChapters(this)" />  
+                                />  
                             <track label="English" kind="subtitles" srclang="en" src="img/video/captions.vtt" default>
                         </video>
                         <div id='media-controls'>
@@ -221,6 +215,7 @@
                         <h3>May 2009 to present</h3>
                         <ul>
                             <li>Remote work</li>
+                            <li>Developed & maintained company website</li>
                             <li>Spent three years developing software to automate workflow with VB & MySQL, integrating with several APIs & programs</li>
                             <li>Diverse customer base, attorneys & pro se parties</li>
                             <li>Standard business operations such as accounting and project management</li>
@@ -566,6 +561,7 @@
 
     </div>
 
+    <script src="js/fontawesome.js"></script>
     <script src="js/media-player.js" ></script>
     <script src="js/index.js"></script>
     <script src="js/modal.js"></script>

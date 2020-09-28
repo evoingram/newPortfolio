@@ -305,7 +305,6 @@ h6 {
     line-height: 1.25em;
     font-size: 1.35em;
 }
-
 .icon.style2:hover {
     background-color: #c6426e;
 }
@@ -589,6 +588,17 @@ section .icons .resume-icon {
     height: 2.3em;
 
 }
+section .icons .resume-icon.style2:before {
+    margin-top: -15%;
+}
+
+section .icons .resume-icon.fa-file-pdf:before, section .icons .resume-icon.fa-linkedin:before {
+    margin-left: 15%;
+}
+
+section .icons .resume-icon.fa-markdown:before {
+    margin-left: -3%;
+}
 
 
 /* Thumbnails */
@@ -794,6 +804,22 @@ section .icons .resume-icon {
     body {
         transform: scale(0.95);
         transform-origin: 0 0;
+    }
+    section .icons .resume-icon.style2:before {
+        margin-top: 0%;
+        transform: scale(1.5);
+    }
+    
+    section .icons .resume-icon.fa-file-pdf:before {
+        margin-left: 32%;
+    }
+
+    section .icons .resume-icon.fa-linkedin:before {
+        margin-left: 29%;
+    }
+    
+    section .icons .resume-icon.fa-markdown:before {
+        margin-left: 10%;
     }
 }
 

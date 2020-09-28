@@ -1,4 +1,3 @@
-
 var yPosition;
 var modalFooter, mfH3contentD, mfH3contentC, mfH3contentE;
 
@@ -34,6 +33,23 @@ openModal = (projectModalName) => {
     var h2Holder = createHeaderElements('', modalHeader, 'div');
 
     h2Holder.id = 'modalH2Holder';
+
+    // AQC, portfolio, swaap, blogbackend, nodeBE, cgol, nasaSearch, vbDatabase, javabe, ucCustomer, speechRecog, aQuack, webappFE
+    if(projectModalName == 'vbDatabase'){
+        modalFooter.classList.add('unfit-footer');
+    }
+
+    let generatedText = generateTextElements(projectModalName);
+    
+    h2content = createHeaderElements(generatedText[0], h2Holder, 'h2');    
+    h3content = createHeaderElements(generatedText[1], h2Holder, 'h3');
+
+    appendModalFooterElements(generatedText[2], generatedText[3], generatedText[4]);
+    appendModalBodyElements(generatedText[5], generatedText[6], generatedText[7]);  
+
+}
+
+generateTextElements = (projectModalName) => {
 
     let h2Text, h3Text, techStackArray, featuresArray, pictureSRC, deployedLinkText, repoName, ccID;
 
@@ -94,7 +110,7 @@ openModal = (projectModalName) => {
 
         pictureSRC = 'blogbackend2.webp';
         techStackArray = ['Node.js', 'Express', 'Knex', 'bcrypt', 'Postman', 'PostgreSQL'];
-        featuresArray = ['Live solo project', 'RESTful API with auth services for blog back end', '37 endpoints', 'Extensive query parameters', 'Top 100 most liked & read posts', 'Post tagging functionality', 'Cache functionality'];
+        featuresArray = ['Live solo project', 'RESTful API with auth services for blog back end', '37 endpoints', 'Extensive query parameters', 'Top 20 most liked & read posts', 'Post tagging functionality', 'Cache functionality'];
 
     }
     
@@ -229,14 +245,9 @@ openModal = (projectModalName) => {
         pictureSRC = 'webappFE.webp';
         techStackArray = ['React', 'Redux', 'Styled Components', 'TypeScript', 'Cypress', 'Axios'];
         featuresArray = ['In-progress solo project', "Front end for the online port of my company's VB database, used for transcript production and workflow management"];
-
     }
-
-    h2content = createHeaderElements(h2Text, h2Holder, 'h2');    
-    h3content = createHeaderElements(h3Text, h2Holder, 'h3');
-
-    appendModalFooterElements(deployedLinkText, repoName, ccID);
-    appendModalBodyElements(pictureSRC, techStackArray, featuresArray);  
+    
+    return [h2Text, h3Text, deployedLinkText, repoName, ccID, pictureSRC, techStackArray, featuresArray];
 
 }
 
@@ -299,19 +310,19 @@ appendModalFooterElements = (deployedHREF, repoName, codeClimateID) => {
         deployedImg.style.display = 'none';    
     }
     if (repoName === 'speechRecog' || repoName === 'webapp-frontend'){
-        deployedImg.src = 'https://img.shields.io/badge/NOT%20Deployed-informational?style=flat&logoColor=white&color=7a28cc';
+        deployedImg.src = 'https://img.shields.io/badge/NOT%20Deployed-informational?style=flat&logoColor=white&color=7a28cc&cacheSeconds=2592000';
     }
     else if (repoName === 'vbDatabase') {
-        deployedImg.src = 'https://img.shields.io/badge/Deployed%20OFFLINE-informational?style=flat&logoColor=white&color=7a28cc';
+        deployedImg.src = 'https://img.shields.io/badge/Deployed%20OFFLINE-informational?style=flat&logoColor=white&color=7a28cc&cacheSeconds=2592000';
     
     }
     else if (repoName === 'ucCustomer') {
         deployedLink.href = 'https://github.com/evoingram/webapp-backend/blob/master/docs/use%20case.jpg';
-        deployedImg.src = 'https://img.shields.io/badge/Customer%20Use%20Case-informational?style=flat&logoColor=white&color=7a28cc';
+        deployedImg.src = 'https://img.shields.io/badge/Customer%20Use%20Case-informational?style=flat&logoColor=white&color=7a28cc&cacheSeconds=2592000';
     }
     else {
         deployedLink.href = deployedHREF;
-        deployedImg.src = 'https://img.shields.io/badge/Deployed%20Project-informational?style=flat&logoColor=white&color=7a28cc';
+        deployedImg.src = 'https://img.shields.io/badge/Deployed%20Project-informational?style=flat&logoColor=white&color=7a28cc&cacheSeconds=2592000';
         deployedImg.style.display = 'flex';
     }
 
@@ -323,7 +334,7 @@ appendModalFooterElements = (deployedHREF, repoName, codeClimateID) => {
 
     if (repoName === 'ucCustomer') {
         codeGitHubLink.href = 'https://github.com/evoingram/webapp-backend/blob/master/docs/manager%20UCD.jpg';
-        codeGitHubImg.src = 'https://img.shields.io/badge/Manager%20Use%20Case-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';  
+        codeGitHubImg.src = 'https://img.shields.io/badge/Manager%20Use%20Case-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc&cacheSeconds=2592000';  
 
         codeClimateLink.href = '';
         codeClimateImg.src = '';  
@@ -331,7 +342,7 @@ appendModalFooterElements = (deployedHREF, repoName, codeClimateID) => {
     }
     else {
         codeGitHubLink.href = 'https://github.com/evoingram/' + repoName;
-        codeGitHubImg.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc';
+        codeGitHubImg.src = 'https://img.shields.io/badge/%20-Code%20On%20GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=7a28cc&cacheSeconds=2592000';
 
         codeClimateLink.href = 'https://codeclimate.com/github/evoingram/' + repoName + '/maintainability';
         codeClimateImg.src = 'https://api.codeclimate.com/v1/badges/' + codeClimateID + '/maintainability'; 
@@ -464,7 +475,7 @@ document.addEventListener("click", (event) => {
         }
     }
     else{
-        modal.style.position = '';
+        modal.style.position = 'fixed';
         modal.style.top = '0px';
     }
 });

@@ -160,8 +160,6 @@ generateTextElements = (projectModalName) => {
     }
     
     else if(projectModalName == 'vbDatabase'){
-        modalFooter.classList.add('unfit-footer');
-
         h2Text = 'Company App:  Production Software';
         h3Text = "My court transcription company's VB database, used for transcript production and workflow management";
 
@@ -169,7 +167,7 @@ generateTextElements = (projectModalName) => {
         repoName = 'vbDatabase';
         ccID = '06260d9e8729d5d17f2a';
 
-        pictureSRC = 'img/projects/projectpicture-vbDatabase.webp';
+        pictureSRC = 'vbDatabase.webp';
         techStackArray = ['Visual Basic', 'MySQL', 'MS Access'];
         featuresArray = ['Integrates GTD principles into workflow', 'Generates & formats 25 to 30 different documents automatically via MS Office',"Manages schedule and production workflow", 'Auto-imports electronic communication', 'Automatically hyperlinks authority within transcripts via CourtListener API', 'Manipulates PDFs to auto-generate bookmarks and create different transcript versions', 'Tracks communication and document history of each transcript order', 'Manages and plays audio and reporter notes', 'Integrated with Office, Acrobat, and WinSCP libraries and several APIs such as CourtListener, PayPal, OneNote, and others', 'Speech recognition integrated via batch files & PocketSphinx'];
     }

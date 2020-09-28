@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
-    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
-    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
-    <noscript><link rel="stylesheet" href="css/font-awesome.min.css"></noscript>
-    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/index.css"></noscript>
-    <link rel="stylesheet" href="css/media-player.css" />
-    <link rel="stylesheet" href="css/subtitles.css" />
+    <link href="css/bootstrap.min.css" rel="preload" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+    <link href="css/font-awesome.min.css" rel="preload" as="style">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'>
+    <link rel="stylesheet" href="css/index.css" type='text/css'>
+    <link href="css/media-player.css" rel="preload" as="style">
+    <link rel="stylesheet" href="css/media-player.css" type='text/css'>
+    <link href="css/subtitles.css" rel="preload" as="style">
+    <link rel="stylesheet" href="css/subtitles.css" type='text/css'>
     <link rel=preload as="font" href="fonts/CascadiaCode.woff2" type="font/woff2" crossorigin>
     <link rel=preload as="font" href="fonts/Barlow.ttf" type="font/ttf" crossorigin>
     <link rel=preload as="font" href="fonts/SourceSansPro.ttf" type="font/ttf" crossorigin>
@@ -162,7 +163,7 @@
                                 <div id='linkedin'
                                         title='Share on LinkedIn'>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.ericaingram.com&title=Cool%20Project%20Walkthrough%20%26%20Custom%20Video%20Player&summary=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram.&source=" target="_blank" rel="noopener noreferrer">
-                                            <img src="img/share/linkedin.webp" alt="Share on LinkedIn" />
+                                            <img src="img/share/linkedin.webp" alt="Share on LinkedIn"/>
                                         </a>
                                 </div>
                                 <div id='email'
@@ -179,7 +180,7 @@
                 
 
                 <br />
-                <span class="below-video-container"><a href="https://www.youtube.com/watch?v=W3Ar4sdL-JI#t=0m27s" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-What's%20detasseling%3F-informational?style=flat&logo=Youtube&logoColor=white&color=7a28cc" class="below-vid-links" alt="What's detasseling?"></a><a href="img/video/Presentation.pptx" target="_blank" rel="noopener noreferrer"><img class="below-vid-links" src="https://img.shields.io/badge/%20-Download%20Presentation-informational?style=flat&logo=Microsoft%20PowerPoint&logoColor=white&color=7a28cc" alt="Download the presentation"></a><a href="img/video/ProjectWalkthrough-FINAL.mp4" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-Download%20Video-informational?style=flat&logoColor=white&color=7a28cc" class="below-vid-links" alt="Download Video"></a></span>
+                <span class="below-video-container"><a href="https://www.youtube.com/watch?v=W3Ar4sdL-JI#t=0m27s" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-What's%20detasseling%3F-informational?style=flat&logo=Youtube&logoColor=white&color=7a28cc&cacheSeconds=2592000" class="below-vid-links" alt="What's detasseling?"></a>  <a href="img/video/Presentation.pptx" target="_blank" rel="noopener noreferrer"><img class="below-vid-links" src="https://img.shields.io/badge/%20-Download%20Presentation-informational?style=flat&logo=Microsoft%20PowerPoint&logoColor=white&color=7a28cc&cacheSeconds=2592000" alt="Download the presentation"></a>  <a href="img/video/ProjectWalkthrough-FINAL.mp4" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%20-Download%20Video-informational?style=flat&logoColor=white&color=7a28cc&cacheSeconds=2592000" class="below-vid-links" alt="Download Video"></a></span>
             </section>
             <hr />
             <section class="menu-section">
@@ -211,7 +212,7 @@
                         
                         <h2>Experience:</h2>
                         <hr />
-                        <h3>Owner/Operator, A Quo Co.</h3>
+                        <h3>Owner/Operator, <a href="https://www.aquoco.co/" target="_blank" rel="noopener noreferrer">A Quo Co.</a></h3>
                         <h3>May 2009 to present</h3>
                         <ul>
                             <li>Remote work</li>
@@ -231,7 +232,7 @@
                                 creation of those entries regarding proper names and nouns</li>
                         </ul>
 
-                        <h3>Team Lead, Lambda School</h3>
+                        <h3>Team Lead, <a href="https://lambdaschool.com/courses/full-stack-web-development" target="_blank" rel="noopener noreferrer">Lambda School</a></h3>
                         <h3>January 2020 to June 2020</h3>
                         <ul>
                             <li>Code review for every student in my team twice a week</li>
@@ -341,10 +342,6 @@
                                 <img src="img/projects/projectpicture-blogbackend2.webp" alt="Blog Back End" title="Blog Back End" />
                                 <h3>Blog Back End</h3>
                             </div>
-                            <div class="myBtn" onclick="openModal('aQuack')">
-                                <img src="img/projects/projectpicture-aQuack.webp" alt="Company App:  Chat Bot" title="Company App:  Chat Bot" />
-                                <h3>Company App:  Chat Bot</h3>
-                            </div>
                         </div>
                         <div>
                             <div class="myBtn" onclick="openModal('nodeBE')">
@@ -381,6 +378,10 @@
                             <div class="myBtn" onclick="openModal('webappFE')">
                                     <img src="img/projects/projectpicture-webappFE.webp" alt="Company App:  Front End" title="Company App:  Front End" />
                                     <h3>Company App:  Front End</h3>
+                            </div>
+                            <div class="myBtn" onclick="openModal('aQuack')">
+                                <img src="img/projects/projectpicture-aQuack.webp" alt="Company App:  Chat Bot" title="Company App:  Chat Bot" />
+                                <h3>Company App:  Chat Bot</h3>
                             </div>
                         </div>
                     </section>
@@ -561,10 +562,10 @@
 
     </div>
 
-    <script src="js/fontawesome.js"></script>
-    <script src="js/media-player.js" ></script>
-    <script src="js/index.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/media-player.js" ></script>
 </body>
 
 </html>

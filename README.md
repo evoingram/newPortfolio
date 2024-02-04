@@ -10,24 +10,23 @@ This was a solo project.
 
 ## Project Description
 
-New portfolio website using what I've learned in Lambda and since.
+Portfolio website using what I've learned in Lambda and since 2020.
 
-Check out my project walkthrough video with custom-built video player at my [portfolio](http://www.ericaingram.com), where you can download both the video and PowerPoint presentation.  This site features an animated gradient background, Bootstrap for a wrapper, Font Awesome icons, modal for each project, and the GitHub calendar app.  It is fully responsive and has been optimized for fast loading.
+Check out my project walkthrough video with custom-built video player at my [portfolio](http://www.ericaingram.com), where you can download both the video and PowerPoint presentation.  This site features `TBD`.  It is fully responsive and has been optimized for fast loading.
 
 ## Key Features
 
 - Live solo project
-- Second iteration, utilizing what I've learned at and since Lambda
-- 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
-- 93/100 for performance in Google Chrome's Lighthouse report
+- Third iteration, utilizing what I've learned at and since Lambda
+- XXX/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
+- XXX/100 for performance in Google Chrome's Lighthouse report
 - pure CSS gradient background
-- project walkthrough video
+- very brief project walkthrough video
 - PowerPoint presentation
 - Resume available in several formats:  markdown, PDF, and HTML
 - Full-featured custom-built HTML5 video player w/ chapters, closed captioning, and share, playback speed, & volume controls in addition to standard player controls
 - cohesive branding between all formats of resume, portfolio, GitHub profile readme, Twitter account, and project walkthrough video.
 - performance optimizations for fast loading
-- GitHub calendar app
 - modal for each project
 - fully responsive
 
